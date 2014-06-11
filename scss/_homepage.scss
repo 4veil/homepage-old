@@ -1,0 +1,174 @@
+body { 	
+	background: #F1F1F1;
+}
+
+#contact-section, #featured {
+	background: #E1E5ED;
+}
+
+#hero-panel {
+
+	background: url(../img/banner2.jpg) no-repeat fixed center top;
+
+	.title-container { 
+		padding: 15em 0;
+		@media #{$medium-only} {
+			padding: 4em 0 6em 0;
+		}
+
+		@media #{$small-only} {
+			padding: 9em 0 10em 0;
+		}
+	}
+
+	.heading {
+		text-align: center;
+		line-height: 1em;
+		font-size: 6em;
+		color: #263944;
+		text-shadow:
+		    -1px -1px 0 #fff,
+		    1px -1px 0 #fff,
+		    -1px 1px 0 #fff,
+		    1px 1px 0 #fff; 
+
+		@media #{$small-only} {
+			font-size: 3.7em;
+		}
+	}
+
+	.subheading {
+		text-align: center;
+		color: #00DD95;
+		font-size: 2.4em;
+		background-color:rgba(38,57,68,0.6);
+	}
+
+}
+
+#about {
+	padding: 4rem 0;
+	text-align: center;
+
+	p {
+		font-size: 1.5em;
+	}
+}
+
+#skills {
+
+	padding: 4rem 0;	
+	text-align: center;
+
+	p {
+		font-size: 1.5em;
+	}
+}
+
+#featured {
+
+	padding: 4em 0;
+
+	.circular {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		margin: 20px 0;
+	}
+
+	.circular:hover { 
+		box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+	}
+
+	#gallery { text-align: center; }
+}
+
+#contact-section {
+	padding: 50px 0;
+	text-align: center;
+
+	p {
+		font-size: 1.5em;
+		margin-bottom: 2em;
+	}
+
+	h3 {
+		font-size: 2.5em;
+		color: #263944;
+		text-align: center;
+		margin-bottom: 1.1em;
+	}
+}
+
+#featured h3, #about h3, #skills h3 {
+	font-size: 2em;
+	color: #263944;
+	text-align: center;
+	margin-bottom: 0.7em;
+}
+
+.contact-button {
+	display: block;
+	margin: 0 auto;
+}
+
+input[type='text']
+{
+	max-width: 400px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 400px;
+    height: 150px;
+}
+
+span.error { 
+	margin: 0 auto;
+	font-size: 1em;
+	background: none;
+}
+
+.glowing-border { 
+    outline: none !important;
+    border-color: #9ecaed !important;
+    box-shadow: 0 0 10px #F04124 !important;
+}
+
+@media only screen and (max-width: 767px) { 
+	#hero-panel {
+		background: url(../img/banner2.jpg) no-repeat center center fixed;
+		padding: 10px;
+		background-position: center top;
+
+		#container {
+			text-align: center;
+			padding-bottom: 10px;
+			font-weight: 200;
+			font-size: 3em;
+			color: #263944;
+			text-shadow:
+			    -1px -1px 0 #fff,
+			    1px -1px 0 #fff,
+			    -1px 1px 0 #fff,
+			    1px 1px 0 #fff; 
+		}
+
+		.subheading {
+			text-align: center;
+			// color: #00DD95;
+			color: #00DD95;
+			font-size: 1.5em;
+			background-color:rgba(38,57,68,0.5);
+		}
+	}
+ }
